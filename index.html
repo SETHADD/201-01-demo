@@ -6,13 +6,114 @@
     <title>201-demo-web</title>
     <link rel="stylesheet" href="reset.css">
     <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            min-width: 320px;
+            font-size: 1 rem;
+            font-weight: 400;
+            letter-spacing: 0.01;
+            line-height: 1.6;
+            color: black;
+            background-color: pink;
+        }
+
+        li{
+            display: inline;
+            margin: 0 auto;
+        }
+
         h1{
             color: blueviolet;
             background-color: black;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
         }
+
+        header{
+            background-color: black;
+        }
+
+        .header-container{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        a{
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        a:hover{
+            color: white;
+        }
+
+        section{
+            border-style: solid;
+            border-width: thin;
+            margin-bottom: 1cm;
+            margin-top: 1cm;
+            margin-left: 1mm;
+            margin-right: 1mm;
+            padding: 5mm;
+        }
+
+        footer{
+            text-align: center;
+            text-shadow: 5rcap;
+        }
+
+        section>h2{
+            text-align: center;
+            font-size: large;
+            font-weight: 600;
+        }
+
+        
     </style>
+    <script src="questions.js"></script>
+
 </head>
 <body>
-    <h1>HELLO WORLD</h1>
+    <header class="header-container">
+        <h1>ABOUT ME</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Contact</a>    
+                </li>    
+                <li>
+                <a href="#">fun</a>    
+                </li>
+                <li>
+                    <a href="#">Other</a>    
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section>
+        <h2>Details</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cum, dolore harum doloremque temporibus excepturi rem nostrum nisi exercitationem quo necessitatibus ipsa molestiae dignissimos expedita voluptate numquam similique deserunt labore! Sed quibusdam accusamus, nemo maxime obcaecati voluptatibus consectetur odio quidem nostrum, sint officiis ad beatae perspiciatis eum iste id reiciendis?</p>
+    </section>
+    <section>
+        <h2>Work Experience</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cum, dolore harum doloremque temporibus excepturi rem nostrum nisi exercitationem quo necessitatibus ipsa molestiae dignissimos expedita voluptate numquam similique deserunt labore! Sed quibusdam accusamus, nemo maxime obcaecati voluptatibus consectetur odio quidem nostrum, sint officiis ad beatae perspiciatis eum iste id reiciendis?</p>
+    </section>
+    <section>
+        <h2>Educational Background</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cum, dolore harum doloremque temporibus excepturi rem nostrum nisi exercitationem quo necessitatibus ipsa molestiae dignissimos expedita voluptate numquam similique deserunt labore! Sed quibusdam accusamus, nemo maxime obcaecati voluptatibus consectetur odio quidem nostrum, sint officiis ad beatae perspiciatis eum iste id reiciendis?</p>
+    </section>
+    </main>
+    <footer>
+        <p>Thanks For Reading</p>
+    </footer>
 </body>
 </html>
